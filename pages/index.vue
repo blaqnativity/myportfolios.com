@@ -29,7 +29,7 @@
     <div class="md:hidden">
       <div
         id="menu"
-        class="absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font bg-white sm:auto sm:self-center left-6 right-6 drop-shadow-md"
+        class="absolute flex flex-col items-center self-end hidden py-8 mt-10 space-y-6 font bg-white sm:auto sm:self-center left-6 right-6 drop-shadow-md"
       >
         <NuxtLink to="/"><span>About me</span></NuxtLink>
         <NuxtLink to="/"><span>Dev Projects</span></NuxtLink>
