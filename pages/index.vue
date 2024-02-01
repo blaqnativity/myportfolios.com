@@ -124,7 +124,19 @@
     </div>
   </section>
 
-  <!-- ================About section================ -->
+  <!-- ================Projects section================ -->
+  <section class="mb-32">
+    <div class="container mx-auto px-6">
+      <div class="title flex flex-col space-y-6 text-start">
+        <h4 class="grayTitle text-gray-600 font-medium text-xl">Projects</h4>
+        <h3 class="font-medium text-2xl text-gray-700">Featured Projects.</h3>
+      </div>
+
+      <!-- flex containers -->
+    </div>
+  </section>
+
+  <!-- ================Contact section================ -->
   <section class="mb-32">
     <div class="container mx-auto px-6">
       <div class="title flex flex-col space-y-6 text-center">
