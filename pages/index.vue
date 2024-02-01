@@ -142,10 +142,13 @@
           <img src="~/assets/img/contact.svg" alt="" />
         </div>
         <!-- items right -->
-        <div class="text-center md:text-right">
-          <div class="flex flex-col items-center mb-3 md:items-end">
-            <small>email: theolukayodeasemudara@gmail.com</small>
-            <small>phone: 08140673711</small>
+        <div class="text-center md:text-left">
+          <div class="flex flex-col items-center mb-3 md:items-start">
+            <small
+              ><span class="font-medium">email:</span>
+              theolukayodeasemudara@gmail.com</small
+            >
+            <small><span class="font-medium">phone:</span> 08140673711</small>
           </div>
           <p class="mb-4">
             I'm actively open to new opportunities and requests.
