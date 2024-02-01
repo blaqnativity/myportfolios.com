@@ -143,6 +143,10 @@
         </div>
         <!-- items right -->
         <div class="text-center md:text-right">
+          <div class="flex flex-col items-center mb-3 md:items-end">
+            <small>email: theolukayodeasemudara@gmail.com</small>
+            <small>phone: 08140673711</small>
+          </div>
           <p class="mb-4">
             I'm actively open to new opportunities and requests.
           </p>
