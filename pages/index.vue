@@ -123,6 +123,47 @@
       </div>
     </div>
   </section>
+
+  <!-- ================About section================ -->
+  <section class="mb-32">
+    <div class="container mx-auto px-6">
+      <div class="title flex flex-col space-y-6 text-center">
+        <h4 class="grayTitle text-gray-600 font-medium text-xl">Contact</h4>
+        <h3 class="font-medium text-2xl text-gray-700">
+          Are you ready to work with me?
+        </h3>
+      </div>
+
+      <div
+        class="flex flex-col items-center md:flex-row mt-20 md:space-x-20 space-y-10"
+      >
+        <!-- items-left -->
+        <div class="md:w-1/2">
+          <img src="~/assets/img/contact.svg" alt="" />
+        </div>
+        <!-- items right -->
+        <div class="text-center md:text-right">
+          <p class="mb-4">
+            I'm actively open to new opportunities and requests.
+          </p>
+          <p>
+            If you have a question, or just want to say hi, I'll try my best to
+            get back to you.
+          </p>
+
+          <div class="flex justify-center md:justify-end mt-6">
+            <NuxtLink to="/"
+              ><button
+                class="btn px-6 py-3 border-2 border-gray-700 font-medium"
+              >
+                Get in touch
+              </button></NuxtLink
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
