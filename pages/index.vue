@@ -114,6 +114,7 @@
         <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Tailwindcss</span>
         <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Bootstrapcss</span>
         <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Figma</span>
+        <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Adobe XD</span>
         <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Canva Design</span>
         <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Webflow</span>
         <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Wordpress</span>
