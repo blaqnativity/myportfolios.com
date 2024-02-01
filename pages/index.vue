@@ -158,7 +158,7 @@
             get back to you.
           </p>
 
-          <div class="flex justify-center md:justify-end mt-6">
+          <div class="flex justify-center md:justify-start mt-6">
             <NuxtLink to="/"
               ><button
                 class="btn px-6 py-3 border-2 border-gray-700 font-medium"
