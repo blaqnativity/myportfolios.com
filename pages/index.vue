@@ -120,11 +120,6 @@
         <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Wordpress</span>
         <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Netlify</span>
         <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Git</span>
-        <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Excel</span>
-        <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Power Point</span>
-        <span class="pill bg-blue-200 px-5 py-2 rounded-xl"
-          >Microsoft Word</span
-        >
       </div>
     </div>
   </section>
