@@ -8,33 +8,35 @@
       >
 
       <!-- Menu Items -->
-      <ul class="hidden nav-links md:flex space-x-6 items-center">
+      <ul
+        class="hidden md:flex space-x-6 items-center text-gray-600 text-sm uppercase font-semibold"
+      >
+        <NuxtLink to="/" class="hover:text-gray-400"
+          ><span>About me</span></NuxtLink
+        >
+        <NuxtLink to="/" class="hover:text-gray-400"
+          ><span>Dev Projects</span></NuxtLink
+        >
+        <NuxtLink to="/" class="hover:text-gray-400"
+          ><span>Contact</span></NuxtLink
+        >
+      </ul>
+
+      <!-- hamburger icon -->
+      <div class="hamburgerIcon md:hidden cursor-pointer space-y-1">
+        <div class="w-8 h-0.5 bg-black"></div>
+        <div class="w-8 h-0.5 bg-black"></div>
+        <div class="w-8 h-0.5 bg-black"></div>
+      </div>
+
+      <!-- hamburger menu -->
+      <ul
+        class="hidden items-center flex-col absolute left-0 w-full top-0 p-10 rounded-b-3xl text-sm uppercase font-semibold bg-indigo-500 space-y-4 text-white"
+      >
         <NuxtLink to="/"><span>About me</span></NuxtLink>
         <NuxtLink to="/"><span>Dev Projects</span></NuxtLink>
         <NuxtLink to="/"><span>Contact</span></NuxtLink>
       </ul>
-
-      <!-- hamburger icon -->
-      <button
-        id="menu-btn"
-        class="block hamburger md:hidden focus:outline-none"
-      >
-        <span class="hamburger-top"></span>
-        <span class="hamburger-middle"></span>
-        <span class="hamburger-bottom"></span>
-      </button>
-    </div>
-
-    <!-- mobile nenu -->
-    <div class="md:hidden">
-      <div
-        id="menu"
-        class="absolute flex flex-col items-center self-end hidden py-8 mt-10 space-y-6 font bg-white sm:auto sm:self-center left-6 right-6 drop-shadow-md"
-      >
-        <NuxtLink to="/"><span>About me</span></NuxtLink>
-        <NuxtLink to="/"><span>Dev Projects</span></NuxtLink>
-        <NuxtLink to="/"><span>Contact</span></NuxtLink>
-      </div>
     </div>
   </nav>
 
