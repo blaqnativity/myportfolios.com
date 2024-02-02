@@ -97,28 +97,34 @@
         <!-- items-right -->
         <div class="md:w-1/2">
           <p class="mb-2">
-            Junior Frontend Engineer that loves creating solutions and crafting
-            amazing user experiences.
+            Junior Frontend Engineer passionate about crafting exceptional user
+            experiences and creating innovative solutions.
           </p>
           <p class="mb-2">
-            My journey with Software development started in 2021, when I joined
-            Medipalhealthcare as a customer success officer in January. I used
-            to accompany my CTO to facilities that used our solutions for
-            medical purposes and during that period, I saw how he used to edit
-            HTML tags and contents of the software from a supposed backend.
+            My journey into software development began in 2021 when I joined
+            Medipalhealthcare as a customer success officer in January. During
+            my time there, I had the opportunity to work closely with our Chief
+            Technology Officer (CTO), accompanying him to facilities that
+            utilized our software for medical purposes. It was during these
+            visits that I gained insight into the backend operations, witnessing
+            firsthand how HTML tags and content were manipulated to enhance the
+            software.
           </p>
           <p class="mb-2">
-            I was pretty impressed and wanted to give it a try too. A friend by
-            the name Micheal(UI/UX expert), asked me to watch some couple of
-            videos on youtube and that was the push I needed. Over the years, I
-            have taught myself how to write some stacks following youtube aided
-            videos and Udemy materials too.
+            Inspired by what I observed, I decided to dive into the world of
+            coding. A friend and UI/UX expert, Michael, played a crucial role in
+            guiding me. He recommended watching educational videos on YouTube,
+            providing the initial push that ignited my passion for coding. Since
+            then, I've been on a self-taught journey, honing my skills through a
+            combination of YouTube tutorials and Udemy courses.
           </p>
           <p class="mb-2">
-            Currently, I'm actively searching for my next role where I can keep
-            adding value and working with amazing people. Feel free to reach out
-            if you have an opening that fits my skillset or not - I'm open to
-            learning
+            I am currently in search of my next professional opportunity, where
+            I can continue to contribute value and collaborate with dynamic
+            teams. Whether your opening aligns perfectly with my skill set or
+            not, I'm always open to learning and exploring new challenges. Feel
+            free to reach out if you have an opportunity that could benefit from
+            my expertise. Let's connect and create something amazing together!
           </p>
         </div>
       </div>
