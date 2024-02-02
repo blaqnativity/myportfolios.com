@@ -4,14 +4,14 @@
     <div class="flex items-center justify-between">
       <!-- Logo -->
       <NuxtLink to="/"
-        ><span class="text-lg md:text-2xl">olukayode!</span></NuxtLink
+        ><span class="logo text-4xl font-semibold">olukayode!</span></NuxtLink
       >
 
       <!-- Menu Items -->
       <ul
         class="hidden md:flex space-x-6 items-center text-gray-600 text-sm uppercase font-semibold"
       >
-        <NuxtLink to="/" class="hover:text-gray-400"
+        <NuxtLink to="about" class="hover:text-gray-400"
           ><span>About me</span></NuxtLink
         >
         <NuxtLink to="/" class="hover:text-gray-400"
@@ -23,7 +23,10 @@
       </ul>
 
       <!-- hamburger icon -->
-      <div class="hamburgerIcon md:hidden cursor-pointer space-y-1">
+      <div
+        class="hamburgerBtn md:hidden cursor-pointer space-y-1"
+        @click="toggle()"
+      >
         <div class="w-8 h-0.5 bg-black"></div>
         <div class="w-8 h-0.5 bg-black"></div>
         <div class="w-8 h-0.5 bg-black"></div>
@@ -31,7 +34,7 @@
 
       <!-- hamburger menu -->
       <ul
-        class="hidden items-center flex-col absolute left-0 w-full top-0 p-10 rounded-b-3xl text-sm uppercase font-semibold bg-indigo-500 space-y-4 text-white"
+        class="menu hidden items-center flex-col absolute left-0 w-full top-0 p-10 rounded-b-3xl text-sm uppercase font-semibold bg-indigo-500 space-y-4 text-white"
       >
         <NuxtLink to="/"><span>About me</span></NuxtLink>
         <NuxtLink to="/"><span>Dev Projects</span></NuxtLink>
@@ -281,7 +284,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    toggle() {
+      menu.remove("hidden");
+    },
+  },
+};
 </script>
 
 <style></style>
