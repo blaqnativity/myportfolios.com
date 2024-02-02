@@ -4,7 +4,9 @@
     <div class="flex items-center justify-between">
       <!-- Logo -->
       <NuxtLink to="/"
-        ><span class="logo text-4xl font-semibold">olukayode!</span></NuxtLink
+        ><span class="logo text-4xl md:text-5xl font-medium"
+          >olukayode!</span
+        ></NuxtLink
       >
 
       <!-- Menu Items -->
