@@ -47,7 +47,7 @@
 
   <div class="container mx-auto p-6 mt-10">
     <div class="flex flex-col space-y-4 items-center text-center">
-      <h2 class="text-7xl font-medium text-gray-500">about.</h2>
+      <h2 class="text-5xl font-medium text-gray-500 md:text-7xl">about.</h2>
       <span class="font-medium text-gray-500"
         >I'm a frontend engineer based in Lagos, Nigeria.</span
       >
@@ -60,19 +60,10 @@
       </p>
 
       <p class="text-gray-500 w-[80%]">
-        Post-university, I completed my National Youth Service Corps (NYSC) in
-        2020 and returned to Lagos. It was here that I ventured into the dynamic
-        world of technology. Joining a startup as a customer success officer, I
-        marveled at the feats accomplished by our Chief Technology Officer
-        (CTO). His ability to navigate the tech landscape, transforming what
-        seemed impossible into reality, fascinated me.
-      </p>
-
-      <p class="text-gray-500 w-[80%]">
-        My entry into the tech space took a decisive turn when a friend named
-        Michael introduced me to UI/UX design through insightful videos. This
-        introduction marked the beginning of my exploration and immersion into
-        the tech world.
+        Joining a startup as a customer success officer, I marveled at the feats
+        accomplished by our Chief Technology Officer (CTO). His ability to
+        navigate the tech landscape, transforming what seemed impossible into
+        reality, fascinated me.
       </p>
 
       <p class="text-gray-500 w-[80%]">
