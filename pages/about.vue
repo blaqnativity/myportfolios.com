@@ -54,9 +54,10 @@
 
       <p class="text-gray-500 w-[80%]">
         Embarking on my professional journey, I initially found myself in the
-        classroom as a school teacher at a primary school. Later, driven by a
-        curiosity to explore new horizons, I enrolled at Adekunle Ajasin
-        University, Akungba, Ondo state, where I pursued a degree in Sociology.
+        classroom as a school teacher at an early age. Later, driven by a
+        curiosity to explore new horizons, I went on to have my first degree
+        like every Nigerian kid in Sociology at Adekunle Ajasin University,
+        Akungba, Ondo State, Nigeria.
       </p>
 
       <p class="text-gray-500 w-[80%]">

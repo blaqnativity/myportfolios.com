@@ -88,7 +88,7 @@
       </div>
 
       <div
-        class="flex flex-col-reverse items-center mt-20 md:flex-row gap-10 md:gap-20"
+        class="flex flex-col-reverse items-center mt-20 md:flex-row gap-10 md:gap-20 md:items-start"
       >
         <!-- items-left -->
         <div class="md:w-1/2">
@@ -102,29 +102,22 @@
           </p>
           <p class="mb-2">
             My journey into software development began in 2021 when I joined
-            Medipalhealthcare as a customer success officer in January. During
-            my time there, I had the opportunity to work closely with our Chief
-            Technology Officer (CTO), accompanying him to facilities that
-            utilized our software for medical purposes. It was during these
-            visits that I gained insight into the backend operations, witnessing
-            firsthand how HTML tags and content were manipulated to enhance the
-            software.
+            Medipalhealthcare as a customer success officer in January. I had
+            the opportunity to work closely with our Chief Technology Officer
+            (CTO), accompanying him to facilities that utilized our software for
+            medical purposes.
           </p>
           <p class="mb-2">
-            Inspired by what I observed, I decided to dive into the world of
-            coding. A friend and UI/UX expert, Michael, played a crucial role in
-            guiding me. He recommended watching educational videos on YouTube,
-            providing the initial push that ignited my passion for coding. Since
-            then, I've been on a self-taught journey, honing my skills through a
+            A friend and UI/UX expert, Michael, played a crucial role in guiding
+            me. He recommended watching educational videos on YouTube, providing
+            the initial push that ignited my passion for coding. Since then,
+            I've been on a self-taught journey, honing my skills through a
             combination of YouTube tutorials and Udemy courses.
           </p>
           <p class="mb-2">
             I am currently in search of my next professional opportunity, where
             I can continue to contribute value and collaborate with dynamic
-            teams. Whether your opening aligns perfectly with my skill set or
-            not, I'm always open to learning and exploring new challenges. Feel
-            free to reach out if you have an opportunity that could benefit from
-            my expertise. Let's connect and create something amazing together!
+            teams.
           </p>
         </div>
       </div>
