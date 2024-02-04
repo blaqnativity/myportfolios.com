@@ -1,4 +1,10 @@
-<template></template>
+<template>
+  <div>
+    <navbar />
+    <slot />
+    <footerView />
+  </div>
+</template>
 
 <script>
 export default {};

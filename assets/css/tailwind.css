@@ -25,3 +25,7 @@ body {
   font-family: "Sacramento";
   letter-spacing: 1px;
 }
+
+.btn {
+  @apply px-6 py-3 border-2 border-gray-700 font-medium hover:shadow-lg;
+}

@@ -1,50 +1,4 @@
 <template>
-  <!-- ==============Navbar Section=============== -->
-  <nav class="relative container mx-auto p-6">
-    <div class="flex items-center justify-between">
-      <!-- Logo -->
-      <NuxtLink to="/"
-        ><span class="logo text-4xl md:text-5xl font-medium"
-          >olukayode!</span
-        ></NuxtLink
-      >
-
-      <!-- Menu Items -->
-      <ul
-        class="hidden md:flex space-x-6 items-center text-gray-600 text-sm uppercase font-semibold"
-      >
-        <NuxtLink to="about" class="hover:text-gray-400"
-          ><span>About me</span></NuxtLink
-        >
-        <NuxtLink to="/" class="hover:text-gray-400"
-          ><span>Dev Projects</span></NuxtLink
-        >
-        <NuxtLink to="/" class="hover:text-gray-400"
-          ><span>Contact</span></NuxtLink
-        >
-      </ul>
-
-      <!-- hamburger icon -->
-      <div
-        class="hamburgerBtn md:hidden cursor-pointer space-y-1"
-        @click="toggle()"
-      >
-        <div class="w-8 h-0.5 bg-black"></div>
-        <div class="w-8 h-0.5 bg-black"></div>
-        <div class="w-8 h-0.5 bg-black"></div>
-      </div>
-
-      <!-- hamburger menu -->
-      <ul
-        class="menu hidden items-center flex-col absolute left-0 w-full top-0 p-10 rounded-b-3xl text-sm uppercase font-semibold bg-indigo-500 space-y-4 text-white"
-      >
-        <NuxtLink to="/"><span>About me</span></NuxtLink>
-        <NuxtLink to="/"><span>Dev Projects</span></NuxtLink>
-        <NuxtLink to="/"><span>Contact</span></NuxtLink>
-      </ul>
-    </div>
-  </nav>
-
   <!-- =============Hero Section================== -->
   <section class="mt-20 mb-32">
     <!-- ====================flex container===================== -->
@@ -65,11 +19,7 @@
           Junior frontend Engineer
         </p>
         <div class="flex justify-center md:justify-start">
-          <NuxtLink to="/"
-            ><button class="btn px-6 py-3 border-2 border-gray-700 font-medium">
-              Hire me
-            </button></NuxtLink
-          >
+          <NuxtLink to="/"><button class="btn">Hire me</button></NuxtLink>
         </div>
       </div>
       <!-- image -->
@@ -264,22 +214,11 @@
 
           <div class="flex justify-center md:justify-start mt-6">
             <NuxtLink to="/"
-              ><button
-                class="btn px-6 py-3 border-2 border-gray-700 font-medium"
-              >
-                Get in touch
-              </button></NuxtLink
+              ><button class="btn">Get in touch</button></NuxtLink
             >
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- =============footer section================ -->
-  <section>
-    <div class="container mx-auto grid items-center p-6 text-center">
-      <small>©2024 theolukayodeasemudara.com</small>
     </div>
   </section>
 </template>
