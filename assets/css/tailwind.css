@@ -29,3 +29,7 @@ body {
 .btn {
   @apply px-6 py-3 border-2 border-gray-700 font-medium hover:shadow-lg;
 }
+
+.btnLine {
+  @apply border-gray-700 font-medium py-3 px-6 w-fit mt-4 hover:border-[1px];
+}

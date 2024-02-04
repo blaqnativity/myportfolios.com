@@ -131,6 +131,7 @@
             <span class="text-gray-600 text-sm"
               >One of my first tasks using tailwindcss.</span
             >
+            <NuxtLink to="/" class="btnLine">View More</NuxtLink>
           </div>
         </div>
         <div class="flex flex-col md:flex-row gap-8 my-8">
@@ -149,6 +150,8 @@
               way it was designed unlike the regular kind of personal portfolio.
             </p>
             <span class="text-gray-600 text-sm">Made with bootstrapcss.</span>
+
+            <NuxtLink to="/" class="btnLine">View More</NuxtLink>
           </div>
         </div>
         <div class="flex flex-col md:flex-row gap-8 my-8">
@@ -170,6 +173,8 @@
             <span class="text-gray-600 text-sm"
               >Journey using Nuxt3, Vuejs and Bootstrap css all together.</span
             >
+
+            <NuxtLink to="/" class="btnLine">View More</NuxtLink>
           </div>
         </div>
       </div>
