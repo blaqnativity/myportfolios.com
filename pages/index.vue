@@ -34,7 +34,7 @@
     <div class="container mx-auto px-6">
       <div class="title flex flex-col space-y-6 text-center">
         <h4 class="grayTitle text-gray-600 font-medium text-xl">About</h4>
-        <h3 class="font-medium text-2xl text-gray-700">My Story.</h3>
+        <h3 class="font-medium text-2xl text-gray-700">My Story</h3>
       </div>
 
       <div
