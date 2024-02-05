@@ -33,3 +33,11 @@ body {
 .btnLine {
   @apply border-gray-700 font-medium py-3 px-6 w-fit mt-4 hover:border-[1px];
 }
+
+.card {
+  @apply shadow-md p-8 text-sm rounded-lg flex flex-col items-center space-y-4 md:items-start border bg-gray-100  hover:drop-shadow;
+}
+
+.card h3 {
+  @apply font-medium text-lg;
+}
