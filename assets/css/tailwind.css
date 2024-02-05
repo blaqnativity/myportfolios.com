@@ -49,4 +49,5 @@ body {
 /* font awesome icons */
 i {
   @apply text-xl font-semibold;
+  letter-spacing: "20px";
 }
