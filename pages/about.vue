@@ -130,8 +130,8 @@
               <div class="flex items-center gap-2">
                 <img class="w-[30%]" src="~/assets/img/avatar.svg" alt="" />
                 <div class="flex flex-col items-start gap-2">
-                  <h3>David Duru</h3>
-                  <p>Founder Zicoma Operations</p>
+                  <h3>Phiona Williams</h3>
+                  <p>Elite Homes Ltd</p>
                 </div>
               </div>
 
