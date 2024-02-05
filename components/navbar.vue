@@ -26,13 +26,8 @@
         </ul>
 
         <!-- hamburger icon -->
-        <div
-          class="hamburgerBtn md:hidden cursor-pointer space-y-1"
-          @click="toggle()"
-        >
-          <div class="w-8 h-0.5 bg-black"></div>
-          <div class="w-8 h-0.5 bg-black"></div>
-          <div class="w-8 h-0.5 bg-black"></div>
+        <div class="hamburgerBtn md:hidden">
+          <i class="fa-solid fa-bars"></i>
         </div>
 
         <!-- hamburger menu -->

@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 
+/* font awesome icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,6 +24,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/* ============reuseable components CSS=============== */
 .logo {
   font-family: "Sacramento";
   letter-spacing: 1px;
@@ -40,4 +44,9 @@ body {
 
 .card h3 {
   @apply font-medium text-lg;
+}
+
+/* font awesome icons */
+i {
+  @apply text-xl font-semibold;
 }
