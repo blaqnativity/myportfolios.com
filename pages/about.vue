@@ -9,25 +9,24 @@
         <h2 class="text-5xl font-medium text-gray-500 md:text-7xl">about.</h2>
 
         <p class="text-gray-500 w-[80%]">
-          Embarking on my professional journey, I initially found myself in the
-          classroom as a school teacher at an early age. Later, driven by a
-          curiosity to explore new horizons, I went on to have my first degree
-          like every Nigerian child in Sociology at Adekunle Ajasin University,
-          Akungba, Ondo State, Nigeria.
+          I initially started out as a school teacher at an early age. Later,
+          driven by a curiosity to explore new horizons, I went on to have my
+          first degree like every Nigerian child in Sociology at Adekunle Ajasin
+          University, Ondo State, Nigeria.
         </p>
 
         <p class="text-gray-500 w-[80%]">
-          Joining a startup as a customer success officer, I marveled at the
-          feats accomplished by our Chief Technology Officer (CTO). His ability
-          to navigate the tech landscape, transforming what seemed impossible
-          into reality, fascinated me.
+          Olukayode is a Software Engineer, he has less than two years
+          commercial experience providing front-end development, producing high
+          quality responsive websites, cross platform mobile-apps and
+          exceptional user experience.
         </p>
 
         <p class="text-gray-500 w-[80%]">
-          From my humble beginnings as a school teacher to navigating the realms
-          of technology, my journey has been one of continuous learning and
-          adaptation. I am now eager to contribute my unique perspective and
-          skills to the ever-evolving tech landscape.
+          The work he provides is of highest quality, fully responsive, and
+          tested in a wide range of devices. He takes great care to ensure each
+          project is well-documented and easily maintainable so you can enhance
+          a website as your company grows.
         </p>
 
         <div class="mt-14">
@@ -116,10 +115,10 @@
               <div><i class="fa-solid fa-quote-right"></i></div>
             </div>
             <p class="mt-4">
-              David did an excellent creative job, addressing our request
-              quickly, and also providing her own graphic insight, being open to
-              feedback and changes or edits when they arose. She worked with us
-              the entire way. Highly recommended.
+              Kay did an excellent creative job, addressing our request quickly,
+              and also providing her own graphic insight, being open to feedback
+              and changes or edits when they arose. She worked with us the
+              entire way. Highly recommended.
             </p>
           </div>
         </div>
@@ -138,7 +137,7 @@
               <div><i class="fa-solid fa-quote-right"></i></div>
             </div>
             <p class="mt-4">
-              David did an excellent creative job, addressing our request
+              Kayode did an excellent creative job, addressing our request
               quickly, and also providing her own graphic insight, being open to
               feedback and changes or edits when they arose. She worked with us
               the entire way. Highly recommended.
