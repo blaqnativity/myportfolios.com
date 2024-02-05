@@ -4,16 +4,14 @@
     <div
       class="flex flex-col space-y-4 items-center text-center justify-center"
     >
+      <span class="font-medium text-gray-500">Get to know me</span>
       <h2 class="text-5xl font-medium text-gray-500 md:text-7xl">about.</h2>
-      <span class="font-medium text-gray-500"
-        >I'm a frontend engineer based in Lagos, Nigeria.</span
-      >
 
       <p class="text-gray-500 w-[80%]">
         Embarking on my professional journey, I initially found myself in the
         classroom as a school teacher at an early age. Later, driven by a
         curiosity to explore new horizons, I went on to have my first degree
-        like every Nigerian kid in Sociology at Adekunle Ajasin University,
+        like every Nigerian child in Sociology at Adekunle Ajasin University,
         Akungba, Ondo State, Nigeria.
       </p>
 
@@ -37,7 +35,7 @@
     </div>
 
     <!-- services I offer -->
-    <div class="flex flex-col space-y-4 items-center justify-center mt-20">
+    <div class="flex flex-col space-y-4 items-start justify-center mt-20">
       <p class="text-gray-500 font-medium">Services I offer to my clients</p>
       <h3 class="text-3xl font-medium">My Services</h3>
     </div>
