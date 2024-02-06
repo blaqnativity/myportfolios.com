@@ -1,6 +1,6 @@
 <template>
   <!-- ==============Navbar Section=============== -->
-  <section class="w-[100%] shadow-md">
+  <section class="fixed top-0 backdrop-blur-sm w-[100%] shadow-md">
     <nav
       class="relative container mx-auto p-4 flex justify-between items-center"
     >

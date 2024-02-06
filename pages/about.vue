@@ -1,7 +1,7 @@
 <template>
-  <div class="container mx-auto p-6 mt-4">
+  <div class="container mx-auto p-6">
     <!-- about text head -->
-    <section>
+    <section class="mt-20">
       <div
         class="flex flex-col space-y-4 items-center text-center justify-center"
       >

@@ -1,6 +1,6 @@
 <template>
   <!-- =============Hero Section================== -->
-  <section class="mt-20 mb-32">
+  <section class="h-[100vh] mb-32 flex">
     <!-- ====================flex container===================== -->
     <div
       class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row"
