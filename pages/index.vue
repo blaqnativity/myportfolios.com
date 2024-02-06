@@ -1,6 +1,6 @@
 <template>
   <!-- =============Hero Section================== -->
-  <section class="h-[100vh] mb-32 flex">
+  <section class="mt-20 mb-32 flex">
     <!-- ====================flex container===================== -->
     <div
       class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row"
@@ -28,6 +28,19 @@
       </div>
     </div>
   </section>
+
+  <!-- sticky links -->
+  <div class="hidden fixed left-[2rem] bottom-[2rem] md:flex flex-col gap-6">
+    <NuxtLink to="/"
+      ><img class="w-8 h-8" src="~/assets/img/github.svg" alt=""
+    /></NuxtLink>
+    <NuxtLink to="/"
+      ><img class="w-8 h-8" src="~/assets/img/linkedin.svg" alt=""
+    /></NuxtLink>
+    <NuxtLink to="/"
+      ><img class="w-8 h-8" src="~/assets/img/instagram.svg" alt=""
+    /></NuxtLink>
+  </div>
 
   <!-- ================About section================ -->
   <section class="mb-32">

@@ -35,6 +35,13 @@
       </div>
     </section>
 
+    <!-- sticky links -->
+    <div class="hidden fixed left-[2rem] bottom-[2rem] md:flex flex-col gap-6">
+      <NuxtLink to="/"
+        ><img class="w-8 h-8" src="~/assets/img/whatsapp.svg" alt=""
+      /></NuxtLink>
+    </div>
+
     <!-- services I offer -->
     <section>
       <div class="flex flex-col space-y-4 items-start justify-center mt-40">
