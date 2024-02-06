@@ -10,7 +10,7 @@
 
       <!-- nav menu -->
       <ul class="main_menu hidden space-x-10 md:flex">
-        <li><NuxtLink to="/">About me</NuxtLink></li>
+        <li><NuxtLink to="/about">About me</NuxtLink></li>
         <li><NuxtLink to="/">Portfolio</NuxtLink></li>
         <li><NuxtLink to="/">Contact</NuxtLink></li>
       </ul>
