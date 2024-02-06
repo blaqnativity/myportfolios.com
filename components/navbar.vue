@@ -1,46 +1,31 @@
 <template>
   <!-- ==============Navbar Section=============== -->
-  <div class="navbar shadow-sm w-[100vw] py-4">
-    <nav class="relative container mx-auto">
-      <div class="flex items-center justify-between">
-        <!-- Logo -->
-        <NuxtLink to="/"
-          ><span class="logo text-4xl md:text-5xl font-medium"
-            >olukayode!</span
-          ></NuxtLink
-        >
+  <section class="w-[100%] shadow-md">
+    <nav
+      class="relative container mx-auto p-4 flex justify-between items-center"
+    >
+      <div>
+        <NuxtLink class="logo" to="/">olukayode!</NuxtLink>
+      </div>
 
-        <!-- Menu Items -->
-        <ul
-          class="hidden md:flex space-x-6 items-center text-gray-600 text-sm uppercase font-semibold"
-        >
-          <NuxtLink to="about" class="hover:text-gray-400"
-            ><span>About me</span></NuxtLink
-          >
-          <NuxtLink to="/" class="hover:text-gray-400"
-            ><span>Portfolio</span></NuxtLink
-          >
-          <NuxtLink to="/" class="hover:text-gray-400"
-            ><span>Contact</span></NuxtLink
-          >
-        </ul>
+      <!-- nav menu -->
+      <ul class="main_menu hidden space-x-10 md:flex">
+        <li><NuxtLink to="/">About me</NuxtLink></li>
+        <li><NuxtLink to="/">Portfolio</NuxtLink></li>
+        <li><NuxtLink to="/">Contact</NuxtLink></li>
+      </ul>
 
-        <!-- hamburger icon -->
-        <div class="hamburgerBtn md:hidden">
-          <i class="fa-solid fa-bars"></i>
-        </div>
+      <div class="togglebtn block md:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </div>
 
-        <!-- hamburger menu -->
-        <ul
-          class="menu hidden items-center flex-col absolute left-0 w-full top-0 p-10 rounded-b-3xl text-sm uppercase font-semibold bg-indigo-500 space-y-4 text-white"
-        >
-          <NuxtLink to="/"><span>About me</span></NuxtLink>
-          <NuxtLink to="/"><span>Dev Projects</span></NuxtLink>
-          <NuxtLink to="/"><span>Contact</span></NuxtLink>
-        </ul>
+      <div class="dropdown_menu">
+        <li><NuxtLink to="/">About me</NuxtLink></li>
+        <li><NuxtLink to="/">Portfolio</NuxtLink></li>
+        <li><NuxtLink to="/">Contact</NuxtLink></li>
       </div>
     </nav>
-  </div>
+  </section>
 </template>
 
 <script>
