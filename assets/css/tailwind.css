@@ -28,7 +28,7 @@ body {
 
 /* ============reuseable components CSS=============== */
 .logo {
-  @apply text-[2.4em] font-semibold;
+  @apply text-[2.4em] font-medium;
   font-family: "Sacramento", cursive;
   letter-spacing: 1px;
 }
