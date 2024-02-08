@@ -46,7 +46,7 @@ body {
 }
 
 .card {
-  @apply shadow-md p-8 text-sm rounded-lg flex flex-col items-center space-y-4 md:items-start border bg-gray-100  hover:drop-shadow;
+  @apply shadow-md p-8 text-sm rounded-lg flex flex-col items-center space-y-4 md:items-start border bg-gray-100  hover:drop-shadow hover:hover:scale-105;
 }
 
 .card h3 {
