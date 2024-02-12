@@ -12,7 +12,6 @@
       <ul class="main_menu hidden space-x-10 md:flex">
         <li><NuxtLink to="/about">About me</NuxtLink></li>
         <li><NuxtLink to="/portfolio">Portfolio</NuxtLink></li>
-        <li><NuxtLink to="/contact">Contact</NuxtLink></li>
       </ul>
 
       <div class="togglebtn block md:hidden">
@@ -22,7 +21,6 @@
       <div class="dropdown_menu">
         <li><NuxtLink to="/about">About me</NuxtLink></li>
         <li><NuxtLink to="/">Portfolio</NuxtLink></li>
-        <li><NuxtLink to="/contact">Contact</NuxtLink></li>
       </div>
     </nav>
   </section>
