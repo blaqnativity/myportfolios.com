@@ -2,13 +2,15 @@
   <!-- section page -->
   <section>
     <div class="container mx-auto p-6 mt-20">
-      <div class="flex flex-col space-y-4">
+      <div class="flex flex-col space-y-4 items-center md:items-start">
         <p>Send me a mail</p>
         <h2 class="font-medium text-2xl text-gray-700">Contact me here</h2>
         <div class="w-[20%] bg-gray-400 h-1 rounded-full"></div>
       </div>
 
-      <div class="flex flex-col items-center gap-4 mt-20 md:flex-row">
+      <div
+        class="flex flex-col space-y-6 items-center gap-4 mt-20 md:flex-row md:space-y-0"
+      >
         <div class="w-[80%] md:w-[50%]">
           <img src="~/assets/img/mail.svg" alt="" />
         </div>

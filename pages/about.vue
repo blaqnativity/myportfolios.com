@@ -9,17 +9,9 @@
         <h2 class="text-5xl font-medium text-gray-500 md:text-7xl">about.</h2>
 
         <p class="text-gray-500 w-[80%]">
-          I initially started out as a school teacher at an early age. Later,
-          driven by a curiosity to explore new horizons, I went on to have my
-          first degree like every Nigerian child in Sociology at Adekunle Ajasin
-          University, Ondo State, Nigeria.
-        </p>
-
-        <p class="text-gray-500 w-[80%]">
-          Olukayode is a Software Engineer, he has less than two years
-          commercial experience providing front-end development, producing high
-          quality responsive websites, cross platform mobile-apps and
-          exceptional user experience.
+          Olukayode is a Software Engineer, Olukayode has two years experience
+          providing front-end development, producing high quality responsive
+          websites, cross platform mobile-apps and exceptional user experience.
         </p>
 
         <p class="text-gray-500 w-[80%]">
@@ -36,7 +28,9 @@
     </section>
 
     <!-- sticky links -->
-    <div class="hidden fixed left-[2rem] bottom-[2rem] md:flex flex-col gap-6">
+    <div
+      class="hidden fixed left-[2rem] bottom-[2rem] md:flex flex-col gap-6 shadow-lg p-3 bg-gray-100 rounded-full hover:bg-white border"
+    >
       <NuxtLink to="/"
         ><img class="w-8 h-8" src="~/assets/img/whatsapp.svg" alt=""
       /></NuxtLink>
@@ -106,8 +100,8 @@
       </div>
 
       <!-- testimonial cards -->
-      <div class="grid gap-8 md:grid-cols-2 mt-20">
-        <div class="card">
+      <div class="grid items-center justify-center mt-10 gap-4 md:grid-cols-2">
+        <div class="card flex justify-center">
           <div class="flex flex-col">
             <div class="flex items-start">
               <!-- client name / image -->
@@ -129,7 +123,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card flex justify-center">
           <div class="flex flex-col">
             <div class="flex items-start">
               <!-- client name / image -->
