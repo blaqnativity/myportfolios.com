@@ -63,9 +63,11 @@ i {
   @apply text-[1.5rem];
 }
 
+/* ================HIDDEN CLASS CSS============== */
+
 /* mobile menu */
 .dropdown_menu {
-  @apply hidden  absolute top-[80px] right-[1.5rem] w-[90%] bg-white border drop-shadow-sm overflow-hidden  backdrop-blur-sm rounded-sm  md:hidden;
+  @apply absolute top-[80px] right-[1.5rem] w-[90%] bg-white border drop-shadow-sm overflow-hidden  backdrop-blur-sm rounded-sm  md:hidden;
 }
 
 .dropdown_menu li {

@@ -161,13 +161,7 @@
 </template>
 
 <script>
-export default {
-  methods: {
-    toggle() {
-      menu.remove("hidden");
-    },
-  },
-};
+export {};
 </script>
 
 <style></style>
