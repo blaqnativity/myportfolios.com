@@ -154,42 +154,67 @@
 
           <div class="flex justify-center md:justify-start mt-6">
             <NuxtLink to="/"
-              ><button class="btn">Get in touch</button></NuxtLink
+              ><button class="btn" @click="openForm">
+                Get in touch
+              </button></NuxtLink
             >
           </div>
         </div>
       </div>
 
-      <form @submit.prevent="formInput">
-        <h2>Send Olukayode a DM</h2>
-        <label>Name:</label>
-        <input type="text" />
+      <div class="backdrop" v-if="showForm">
+        <form>
+          <div class="flex items-center justify-between">
+            <h2>Send Olukayode a DM</h2>
+            <span
+              ><i class="fa-regular fa-square-minus" @click="hideForm"></i
+            ></span>
+          </div>
+          <label>Name:</label>
+          <input type="text" />
 
-        <label>Email:</label>
-        <input type="email" />
+          <label>Email:</label>
+          <input type="email" />
 
-        <label>Message:</label>
-        <textarea name=""></textarea>
+          <label>Message:</label>
+          <textarea name=""></textarea>
 
-        <button class="btn flex items-center gap-2 mt-4" @click="submitForm">
-          <span>Send Message</span>
-          <i class="fa-regular fa-paper-plane"></i>
-        </button>
-      </form>
+          <button class="btn flex items-center gap-2 mt-4" @click="submitForm">
+            <span>Send Message</span>
+            <i class="fa-regular fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
     </div>
   </section>
 </template>
 
 <script>
-// export {
-//   data() {
-//     return {
-//     }
-//   },
-// submitForm(){
-//   console.log('form submitted')
-// }
-// };
+export default {
+  data() {
+    return {
+      showForm: false,
+    };
+  },
+
+  methods: {
+    openForm() {
+      this.showForm = !this.showForm;
+    },
+    hideForm() {
+      this.showForm = !this.showForm;
+    },
+  },
+};
 </script>
 
-<style></style>
+<style scoped>
+.backdrop {
+  top: 0;
+  right: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100vw;
+}
+</style>
