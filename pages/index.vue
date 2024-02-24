@@ -32,13 +32,13 @@
   <!-- sticky links -->
   <div class="hidden fixed left-[2rem] bottom-[2rem] md:flex flex-col gap-6">
     <NuxtLink to="/"
-      ><img class="w-8 h-8" src="~/assets/img/github.svg" alt=""
+      ><img class="w-6 h-6" src="~/assets/img/github.svg" alt=""
     /></NuxtLink>
     <NuxtLink to="/"
-      ><img class="w-8 h-8" src="~/assets/img/linkedin.svg" alt=""
+      ><img class="w-6 h-6" src="~/assets/img/linkedin.svg" alt=""
     /></NuxtLink>
     <NuxtLink to="/"
-      ><img class="w-8 h-8" src="~/assets/img/instagram.svg" alt=""
+      ><img class="w-6 h-6" src="~/assets/img/instagram.svg" alt=""
     /></NuxtLink>
   </div>
 
@@ -115,6 +115,16 @@
     </div>
   </section>
 
+  <!-- ================Featured Projects=============== -->
+  <section class="mb-32">
+    <div class="container mx-auto px-6 space-y-6">
+      <div class="flex flex-col space-y-4 items-center">
+        <h4 class="grayTitle text-gray-600 font-medium text-xl">PROJECTS</h4>
+        <h2 class="font-medium text-2xl text-gray-700">Featured Projects.</h2>
+      </div>
+    </div>
+  </section>
+
   <!-- ================Contact section================ -->
   <section class="mb-32">
     <div class="container mx-auto px-6">
@@ -134,13 +144,6 @@
         </div>
         <!-- items right -->
         <div class="text-center md:text-left">
-          <div class="flex flex-col items-center mb-3 md:items-start">
-            <small
-              ><span class="font-medium">email:</span>
-              theolukayodeasemudara@gmail.com</small
-            >
-            <small><span class="font-medium">phone:</span> 08140673711</small>
-          </div>
           <p class="mb-4">
             I'm actively open to new opportunities and requests.
           </p>
@@ -156,12 +159,37 @@
           </div>
         </div>
       </div>
+
+      <form @submit.prevent="formInput">
+        <h2>Send Olukayode a DM</h2>
+        <label>Name:</label>
+        <input type="text" />
+
+        <label>Email:</label>
+        <input type="email" />
+
+        <label>Message:</label>
+        <textarea name=""></textarea>
+
+        <button class="btn flex items-center gap-2 mt-4" @click="submitForm">
+          <span>Send Message</span>
+          <i class="fa-regular fa-paper-plane"></i>
+        </button>
+      </form>
     </div>
   </section>
 </template>
 
 <script>
-export {};
+// export {
+//   data() {
+//     return {
+//     }
+//   },
+// submitForm(){
+//   console.log('form submitted')
+// }
+// };
 </script>
 
 <style></style>

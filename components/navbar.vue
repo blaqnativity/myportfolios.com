@@ -42,7 +42,7 @@ export default {
       showMenu: false,
       logo: "olukayode!",
       link1: "About me",
-      link2: "Portfolio",
+      link2: "Notes",
     };
   },
   methods: {
