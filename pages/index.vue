@@ -19,7 +19,12 @@
           Junior frontend Engineer
         </p>
         <div class="flex justify-center md:justify-start">
-          <NuxtLink to="/"><button class="btn">Hire me</button></NuxtLink>
+          <button class="btn" @click="toggleForm">Hire me</button>
+        </div>
+
+        <div v-if="showForm">
+          <!-- form component -->
+          <BaseInput title="Hire Olukayode" @click="toggleForm" key="hire" />
         </div>
       </div>
       <!-- image -->
@@ -153,55 +158,34 @@
           </p>
 
           <div class="flex justify-center md:justify-start mt-6">
-            <NuxtLink to="/"
-              ><button class="btn" @click="openForm">
-                Get in touch
-              </button></NuxtLink
-            >
+            <button class="btn" @click="toggleForm">Get in touch</button>
+          </div>
+
+          <!-- form component -->
+          <div v-if="showForm">
+            <BaseInput
+              title="Get in touch with me"
+              @close="toggleForm"
+              key="contact"
+            />
           </div>
         </div>
-      </div>
-
-      <div class="backdrop" v-if="showForm">
-        <form>
-          <div class="flex items-center justify-between">
-            <h2>Send Olukayode a DM</h2>
-            <span
-              ><i class="fa-regular fa-square-minus" @click="hideForm"></i
-            ></span>
-          </div>
-          <label>Name:</label>
-          <input type="text" />
-
-          <label>Email:</label>
-          <input type="email" />
-
-          <label>Message:</label>
-          <textarea name=""></textarea>
-
-          <button class="btn flex items-center gap-2 mt-4" @click="submitForm">
-            <span>Send Message</span>
-            <i class="fa-regular fa-paper-plane"></i>
-          </button>
-        </form>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import BaseInput from "~/components/BaseInput.vue";
 export default {
+  components: { BaseInput },
   data() {
     return {
       showForm: false,
     };
   },
-
   methods: {
-    openForm() {
-      this.showForm = !this.showForm;
-    },
-    hideForm() {
+    toggleForm() {
       this.showForm = !this.showForm;
     },
   },

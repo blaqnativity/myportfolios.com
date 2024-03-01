@@ -1,7 +1,6 @@
 <template>
   <div>
     <navbar />
-    <!-- <whatsapp /> -->
     <slot />
 
     <footerView />

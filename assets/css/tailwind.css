@@ -81,6 +81,15 @@ textarea {
 }
 
 /* contact form */
+.backdrop {
+  top: 0;
+  right: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+}
 form {
   @apply w-[420px] bg-white text-left p-[40px] rounded-md border mx-auto my-10;
 }
