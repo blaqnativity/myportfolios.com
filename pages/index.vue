@@ -24,7 +24,7 @@
 
         <div v-if="showForm">
           <!-- form component -->
-          <BaseInput title="Hire Olukayode" @click="toggleForm" key="hire" />
+          <BaseInput title="Employ my services" @click="toggleForm" />
         </div>
       </div>
       <!-- image -->
@@ -158,16 +158,12 @@
           </p>
 
           <div class="flex justify-center md:justify-start mt-6">
-            <button class="btn" @click="toggleForm">Get in touch</button>
+            <button class="btn" @click="toggleFormTwo">Get in touch</button>
           </div>
 
-          <!-- form component -->
-          <div v-if="showForm">
-            <BaseInput
-              title="Get in touch with me"
-              @close="toggleForm"
-              key="contact"
-            />
+          <div v-if="showFormTwo">
+            <!-- form component -->
+            <BaseInput title="Get in touch now !!!" @click="toggleFormTwo" />
           </div>
         </div>
       </div>
@@ -182,11 +178,15 @@ export default {
   data() {
     return {
       showForm: false,
+      showFormTwo: false,
     };
   },
   methods: {
     toggleForm() {
       this.showForm = !this.showForm;
+    },
+    toggleFormTwo() {
+      this.showFormTwo = !this.showFormTwo;
     },
   },
 };
