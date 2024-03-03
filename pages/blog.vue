@@ -50,12 +50,12 @@ export default {
       blogs: [
         {
           title: "Slots VS Props in NUXT-3",
-          text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates debitis minus labore similique a nulla hic laboriosam mollitia dolore dolorum!",
+          text: "With Slots, you can easily display and maneuver the contents of a component, i.e; form, modal and many others...",
           url: "https://dev.to/theolukayodeasemudara/slots-vs-props-in-nuxt-3-34h8",
         },
         {
           title: "Your First Nuxt App",
-          text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates debitis minus labore similique a nulla hic laboriosam mollitia dolore dolorum!",
+          text: "Building apps with NUXT makes your work very easy and seamless especially cause of the fact that NUXT has done so many stuffs behind the scenes for you unlike Vuejs where you have to fix most yourself.",
           url: "https://dev.to/theolukayodeasemudara/your-first-nuxt-3-app-22c",
         },
       ],
