@@ -32,7 +32,7 @@
             <span class="text-sm text-gray-700 font-medium italic">{{
               blog.text
             }}</span>
-            <a :href="blog.url" class="btn w-fit">Read more</a>
+            <a :href="blog.url" class="btn w-fit" target="_blank">Read more</a>
           </div>
         </accordions>
       </div>
