@@ -170,9 +170,47 @@
               <button class="btn" @click="toggleForm">Get in touch</button>
             </div>
 
-            <div v-if="showForm">
-              <!-- form component -->
-              <BaseInput title="Get in touch now !!!" @click="toggleForm" />
+            <!-- form component using slot -->
+            <div class="backdrop" v-if="showForm">
+              <form @click.prevent>
+                <div class="flex items-center justify-between">
+                  <h2>{{ title }}</h2>
+                  <span
+                    ><i
+                      class="fa-regular fa-square-minus"
+                      @click="closeForm"
+                    ></i
+                  ></span>
+                </div>
+
+                <label>Email:</label>
+                <input type="email" />
+
+                <div>
+                  <label for="selectInput">Hire my services for:</label>
+                  <select id="selectInput" v-model="selectedOption">
+                    <option value="">Select One</option>
+                    <option
+                      v-for="(option, index) in options"
+                      :key="index"
+                      :value="option.value"
+                    >
+                      {{ option.label }}
+                    </option>
+                  </select>
+                  <p v-if="selectedOption">
+                    You selected: {{ selectedOption }}
+                  </p>
+                </div>
+
+                <label>Message:</label>
+                <textarea name=""></textarea>
+
+                <button class="btn flex items-center gap-2 mt-4">
+                  <span>Send Message</span>
+                  <i class="fa-regular fa-paper-plane"></i>
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -218,10 +256,20 @@ export default {
   data() {
     return {
       showForm: false,
+      selectedOption: "",
+      options: [
+        { label: "Wordpress", value: "Wordpress Sites" },
+        { label: "Design", value: "UI Designs" },
+        { label: "Frontend", value: "Code Development" },
+        // Add more options as needed
+      ],
     };
   },
   methods: {
     toggleForm() {
+      this.showForm = !this.showForm;
+    },
+    closeForm() {
       this.showForm = !this.showForm;
     },
   },

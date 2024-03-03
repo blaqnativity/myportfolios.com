@@ -22,29 +22,26 @@
           <button class="btn" @click="toggleForm">Hire me</button>
         </div>
 
-        <div v-if="showForm">
-          <!-- form component -->
-          <BaseInput title="Employ my services" @click="toggleForm" />
-          <!-- form -->
-          <div class="flex items-center justify-between">
-            <h2>{{ title }}</h2>
-            <span
-              ><i class="fa-regular fa-square-minus" @click="closeForm"></i
-            ></span>
-          </div>
-          <label>Name:</label>
-          <input type="text" />
+        <div class="backdrop" v-if="showForm">
+          <form @click.prevent>
+            <div class="flex items-center justify-between">
+              <h2>{{ title }}</h2>
+              <span
+                ><i class="fa-regular fa-square-minus" @click="closeForm"></i
+              ></span>
+            </div>
 
-          <label>Email:</label>
-          <input type="email" />
+            <label>Email:</label>
+            <input type="email" />
 
-          <label>Message:</label>
-          <textarea name=""></textarea>
+            <label>Message:</label>
+            <textarea name=""></textarea>
 
-          <button class="btn flex items-center gap-2 mt-4">
-            <span>Send Message</span>
-            <i class="fa-regular fa-paper-plane"></i>
-          </button>
+            <button class="btn flex items-center gap-2 mt-4">
+              <span>Send Message</span>
+              <i class="fa-regular fa-paper-plane"></i>
+            </button>
+          </form>
         </div>
       </div>
       <!-- image -->
@@ -67,28 +64,29 @@ export default {
   components: { BaseInput, whatsapp },
   data() {
     return {
+      title: "Send me a message",
       showForm: false,
-      showFormTwo: false,
     };
   },
   methods: {
     toggleForm() {
       this.showForm = !this.showForm;
     },
-    toggleFormTwo() {
-      this.showFormTwo = !this.showFormTwo;
+    closeForm() {
+      this.showForm = !this.showForm;
     },
   },
 };
 </script>
 
-<style scoped>
+<style>
 .backdrop {
-  top: 0;
+  bottom: 0;
   right: 0;
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100vw;
+  z-index: 10;
 }
 </style>

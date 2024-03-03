@@ -1,22 +1,8 @@
 <template>
-  <div class="backdrop">
-    <slot></slot>
-  </div>
+  <div><slot></slot></div>
 </template>
 
-<script>
-export default {
-  props: ["title"],
-  data() {
-    return {};
-  },
-  methods: {
-    closeForm() {
-      this.$emit("close");
-    },
-  },
-};
-</script>
+<script></script>
 
 <style scoped>
 /* input styles */
