@@ -32,13 +32,7 @@
             <span class="text-sm text-gray-700 font-medium italic">{{
               blog.text
             }}</span>
-            <button class="btn w-fit">
-              <a :href="{ url }" _tab>
-                <span class="mr-2">Read Article</span>
-                <span
-                  ><i class="fa-solid fa-arrow-up-right-from-square"></i></span
-              ></a>
-            </button>
+            <a :href="blog.url" class="btn w-fit">Read more</a>
           </div>
         </accordions>
       </div>

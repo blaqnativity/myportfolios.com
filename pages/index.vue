@@ -25,6 +25,26 @@
         <div v-if="showForm">
           <!-- form component -->
           <BaseInput title="Employ my services" @click="toggleForm" />
+          <!-- form -->
+          <div class="flex items-center justify-between">
+            <h2>{{ title }}</h2>
+            <span
+              ><i class="fa-regular fa-square-minus" @click="closeForm"></i
+            ></span>
+          </div>
+          <label>Name:</label>
+          <input type="text" />
+
+          <label>Email:</label>
+          <input type="email" />
+
+          <label>Message:</label>
+          <textarea name=""></textarea>
+
+          <button class="btn flex items-center gap-2 mt-4">
+            <span>Send Message</span>
+            <i class="fa-regular fa-paper-plane"></i>
+          </button>
         </div>
       </div>
       <!-- image -->

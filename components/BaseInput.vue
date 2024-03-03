@@ -1,26 +1,6 @@
 <template>
   <div class="backdrop">
-    <form @click.prevent>
-      <div class="flex items-center justify-between">
-        <h2>{{ title }}</h2>
-        <span
-          ><i class="fa-regular fa-square-minus" @click="closeForm"></i
-        ></span>
-      </div>
-      <label>Name:</label>
-      <input type="text" />
-
-      <label>Email:</label>
-      <input type="email" />
-
-      <label>Message:</label>
-      <textarea name=""></textarea>
-
-      <button class="btn flex items-center gap-2 mt-4">
-        <span>Send Message</span>
-        <i class="fa-regular fa-paper-plane"></i>
-      </button>
-    </form>
+    <slot></slot>
   </div>
 </template>
 
