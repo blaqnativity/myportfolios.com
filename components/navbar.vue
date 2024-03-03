@@ -4,18 +4,16 @@
     <nav
       class="relative container mx-auto p-4 flex justify-between items-center z-10"
     >
-      <div>
+      <div class="flex items-center">
+        <span><i class="fa-brands fa-hashnode"></i></span>
         <NuxtLink class="logo" to="/">{{ logo }}</NuxtLink>
       </div>
 
       <!-- nav menu -->
       <ul class="main_menu hidden space-x-10 md:flex">
-        <li>
-          <NuxtLink to="/about">{{ link1 }}</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/portfolio">{{ link2 }}</NuxtLink>
-        </li>
+        <li><NuxtLink to="/about">About</NuxtLink></li>
+        <li><NuxtLink to="/">Portfolio</NuxtLink></li>
+        <li><NuxtLink to="/">Blog</NuxtLink></li>
       </ul>
 
       <div class="block md:hidden" @click="toggleBtn">
@@ -24,12 +22,11 @@
       </div>
 
       <div class="dropdown_menu" v-if="showMenu">
-        <li>
-          <NuxtLink to="/about">{{ link1 }}</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/">{{ link2 }}</NuxtLink>
-        </li>
+        <ul class="main_menu hidden space-x-10 md:flex">
+          <li><NuxtLink to="/about">About</NuxtLink></li>
+          <li><NuxtLink to="/">Portfolio</NuxtLink></li>
+          <li><NuxtLink to="/">Blog</NuxtLink></li>
+        </ul>
       </div>
     </nav>
   </section>
@@ -40,9 +37,12 @@ export default {
   data() {
     return {
       showMenu: false,
-      logo: "olukayode!",
-      link1: "About me",
-      link2: "Notes",
+      logo: "lukayode!",
+      // links: [
+      //   { text: "About", url: "/about.vue" },
+      //   { text: "Contact", url: "/contact.vue.vue" },
+      //   { text: "Blog", url: "/" },
+      // ],
     };
   },
   methods: {

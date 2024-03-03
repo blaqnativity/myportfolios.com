@@ -22,19 +22,10 @@
         </p>
 
         <div class="mt-14">
-          <button class="btn">Download CV</button>
+          <button class="btn">Download Resume</button>
         </div>
       </div>
     </section>
-
-    <!-- sticky links -->
-    <div
-      class="fixed left-[2rem] bottom-[2rem] md:flex flex-col gap-6 shadow-lg p-3 bg-gray-100 rounded-full hover:bg-white border"
-    >
-      <NuxtLink to="/"
-        ><img class="w-6 h-6" src="~/assets/img/whatsapp.svg" alt=""
-      /></NuxtLink>
-    </div>
 
     <!-- services I offer -->
     <section>
@@ -147,11 +138,94 @@
         </div>
       </div>
     </section>
+
+    <!-- contact me -->
+    <section class="mt-32">
+      <div class="container mx-auto px-6">
+        <div class="title flex flex-col space-y-6 text-center">
+          <h4 class="grayTitle text-gray-600 font-medium text-xl">Contact</h4>
+          <h3 class="font-medium text-2xl text-gray-700">
+            Are you ready to work with me?
+          </h3>
+        </div>
+
+        <div
+          class="flex flex-col items-center md:flex-row mt-20 md:space-x-20 space-y-10"
+        >
+          <!-- items-left -->
+          <div class="md:w-1/2">
+            <img src="~/assets/img/contact.svg" alt="" />
+          </div>
+          <!-- items right -->
+          <div class="text-center md:text-left">
+            <p class="mb-4">
+              I'm actively open to new opportunities and requests.
+            </p>
+            <p>
+              If you have a question, or just want to say hi, I'll try my best
+              to get back to you.
+            </p>
+
+            <div class="flex justify-center md:justify-start mt-6">
+              <button class="btn" @click="toggleForm">Get in touch</button>
+            </div>
+
+            <div v-if="showForm">
+              <!-- form component -->
+              <BaseInput title="Get in touch now !!!" @click="toggleForm" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
+
+  <!-- ================Skills Section=============== -->
+  <section class="mt-20 mb-10">
+    <div class="container mx-auto px-6 space-y-6">
+      <div class="flex flex-col space-y-4 items-center">
+        <h4 class="grayTitle text-gray-600 font-medium text-xl">Skills</h4>
+        <h2 class="font-medium text-2xl text-gray-700">Tech Stack.</h2>
+        <p>I have experience working with the following technologies</p>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-6">
+        <span class="pill bg-blue-200 px-5 py-2 rounded-xl">HTML</span>
+        <span class="pill bg-blue-200 px-5 py-2 rounded-xl">CSS</span>
+        <span class="pill bg-blue-200 px-5 py-2 rounded-xl"
+          >Javascript (ES6)</span
+        >
+        <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Vue-JS</span>
+        <span class="pill bg-blue-200 px-5 py-2 rounded-xl">NUXT-3</span>
+        <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Tailwindcss</span>
+        <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Bootstrapcss</span>
+        <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Figma</span>
+        <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Adobe XD</span>
+        <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Canva Design</span>
+        <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Webflow</span>
+        <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Wordpress</span>
+        <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Netlify</span>
+        <span class="pill bg-blue-200 px-5 py-2 rounded-xl">Git</span>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
-export default {};
+import footerView from "~/components/footerView.vue";
+export default {
+  components: { footerView },
+  data() {
+    return {
+      showForm: false,
+    };
+  },
+  methods: {
+    toggleForm() {
+      this.showForm = !this.showForm;
+    },
+  },
+};
 </script>
 
 <style></style>

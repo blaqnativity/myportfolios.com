@@ -2,8 +2,6 @@
   <div>
     <navbar />
     <slot />
-
-    <footerView />
   </div>
 </template>
 
