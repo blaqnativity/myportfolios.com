@@ -11,9 +11,9 @@
 
       <!-- nav menu -->
       <ul class="main_menu hidden space-x-10 md:flex">
-        <li><NuxtLink to="/about">About</NuxtLink></li>
-        <li><NuxtLink to="/">Portfolio</NuxtLink></li>
-        <li><NuxtLink to="/blog">Blog</NuxtLink></li>
+        <li v-for="link in links" :key="link.url">
+          <NuxtLink :to="link.url">{{ link.text }}</NuxtLink>
+        </li>
       </ul>
 
       <div class="block md:hidden" @click="toggleBtn">
@@ -22,10 +22,11 @@
       </div>
 
       <div class="dropdown_menu" v-if="showMenu">
-        <ul class="main_menu hidden space-x-10 md:flex">
-          <li><NuxtLink to="/about">About</NuxtLink></li>
-          <li><NuxtLink to="/">Portfolio</NuxtLink></li>
-          <li><NuxtLink to="/blog">Blog</NuxtLink></li>
+        <ul class="main_menu space-x-10 md:flex">
+          <!-- Remove md:hidden class -->
+          <li v-for="link in links" :key="link.url">
+            <NuxtLink :to="link.url">{{ link.text }}</NuxtLink>
+          </li>
         </ul>
       </div>
     </nav>
@@ -38,16 +39,15 @@ export default {
     return {
       showMenu: false,
       logo: "Olukayode!",
-      // links: [
-      //   { text: "About", url: "/about.vue" },
-      //   { text: "Contact", url: "/contact.vue.vue" },
-      //   { text: "Blog", url: "/" },
-      // ],
+      links: [
+        { text: "About", url: "/about" },
+        { text: "Portfolio", url: "/" },
+        { text: "Blog", url: "/blog" },
+      ],
     };
   },
   methods: {
     toggleBtn() {
-      console.log("menu button clicked");
       this.showMenu = !this.showMenu;
     },
   },
