@@ -2,7 +2,7 @@
   <!-- ==============Navbar Section=============== -->
   <section class="fixed top-0 backdrop-blur-sm w-[100%] shadow-md">
     <nav
-      class="relative container mx-auto p-4 flex justify-between items-center z-10"
+      class="relative container mx-auto p-4 flex justify-between items-center z-20"
     >
       <div class="flex items-center">
         <span><i class="fa-brands fa-hashnode"></i></span>
@@ -13,7 +13,7 @@
       <ul class="main_menu hidden space-x-10 md:flex">
         <li><NuxtLink to="/about">About</NuxtLink></li>
         <li><NuxtLink to="/">Portfolio</NuxtLink></li>
-        <li><NuxtLink to="/">Blog</NuxtLink></li>
+        <li><NuxtLink to="/blog">Blog</NuxtLink></li>
       </ul>
 
       <div class="block md:hidden" @click="toggleBtn">
@@ -25,7 +25,7 @@
         <ul class="main_menu hidden space-x-10 md:flex">
           <li><NuxtLink to="/about">About</NuxtLink></li>
           <li><NuxtLink to="/">Portfolio</NuxtLink></li>
-          <li><NuxtLink to="/">Blog</NuxtLink></li>
+          <li><NuxtLink to="/blog">Blog</NuxtLink></li>
         </ul>
       </div>
     </nav>
@@ -37,7 +37,7 @@ export default {
   data() {
     return {
       showMenu: false,
-      logo: "lukayode!",
+      logo: "Olukayode!",
       // links: [
       //   { text: "About", url: "/about.vue" },
       //   { text: "Contact", url: "/contact.vue.vue" },
