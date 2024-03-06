@@ -12,7 +12,7 @@
         </h1>
       </div>
 
-      <div class="mt-20 grid gap-4">
+      <div class="mt-20 grid gap-4" v-if="blogs.length">
         <accordions v-for="(blog, index) in blogs" :key="index">
           <div class="label flex items-center justify-between mb-2">
             <p class="text-lg font-medium text-gray-800">{{ blog.title }}</p>
@@ -36,6 +36,11 @@
           </div>
         </accordions>
       </div>
+      <div class="flex items-center justify-center mt-20" v-else>
+        <p class="text-lg text-gray-600 font-medium">
+          Loading Blog contents...
+        </p>
+      </div>
     </div>
   </section>
 </template>
@@ -47,25 +52,14 @@ export default {
   data() {
     return {
       showContent: null,
-      blogs: [
-        {
-          title:
-            "Programmatically displaying nav menu from an array and binding to its url property",
-          text: "In a recent Vue.js/Nuxt.js project, the initial challenge I encountered was with the navigation menu links not functioning correctly despite being correctly bound. After thorough debugging and troubleshooting, I successfully resolved the issue with the following steps",
-          url: "https://dev.to/theolukayodeasemudara/programmatically-displaying-nav-menu-from-an-array-and-binding-to-its-url-property-2nhl",
-        },
-        {
-          title: "Slots VS Props in NUXT-3",
-          text: "With Slots, you can easily display and maneuver the contents of a component, i.e; form, modal and many others...",
-          url: "https://dev.to/theolukayodeasemudara/slots-vs-props-in-nuxt-3-34h8",
-        },
-        {
-          title: "Your First Nuxt App",
-          text: "Building apps with NUXT makes your work very easy and seamless especially cause of the fact that NUXT has done so many stuffs behind the scenes for you unlike Vuejs where you have to fix most yourself.",
-          url: "https://dev.to/theolukayodeasemudara/your-first-nuxt-3-app-22c",
-        },
-      ],
+      blogs: [],
     };
+  },
+  mounted() {
+    fetch("http://localhost:3001/blogs")
+      .then((res) => res.json())
+      .then((data) => (this.blogs = data))
+      .catch((err) => console.log(err.message));
   },
   methods: {
     toggleAccordion(index) {

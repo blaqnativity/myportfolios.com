@@ -23,7 +23,7 @@
         </div>
 
         <div class="backdrop" v-if="showForm">
-          <form @click.prevent>
+          <form @submit.prevent="handleSubmit">
             <div class="flex items-center justify-between">
               <h2>{{ title }}</h2>
               <span
@@ -32,10 +32,12 @@
             </div>
 
             <label>Email:</label>
-            <input type="email" />
+            <input type="email" v-model="email" />
+            <div v-if="erroMessage">{{ erroMessage }}</div>
 
             <label>Message:</label>
-            <textarea name=""></textarea>
+            <textarea v-model="message"></textarea>
+            <div v-if="erroMessage">{{ erroMessage }}</div>
 
             <button class="btn flex items-center gap-2 mt-4">
               <span>Send Message</span>
@@ -66,6 +68,14 @@ export default {
     return {
       title: "Send me a message",
       showForm: false,
+      email: "",
+      message: "",
+      erroMessage: "",
+      // computed: {
+      //   isEmpty() {
+      //     return this.inputValue.trim() === "";
+      //   },
+      // },
     };
   },
   methods: {
@@ -74,6 +84,11 @@ export default {
     },
     closeForm() {
       this.showForm = !this.showForm;
+    },
+    handleSubmit() {
+      this.closeForm();
+      console.log("Email:", this.email);
+      console.log("Message:", this.message);
     },
   },
 };
