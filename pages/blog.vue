@@ -52,7 +52,29 @@ export default {
   data() {
     return {
       showContent: null,
-      blogs: [],
+      blogs: [
+        {
+          name: "nuxt-app",
+          private: true,
+          type: "module",
+          scripts: {
+            build: "nuxt build",
+            dev: "nuxt dev",
+            generate: "nuxt generate",
+            preview: "nuxt preview",
+            postinstall: "nuxt prepare",
+            "json-server": "json-server --watch db.json --port 3001",
+          },
+          devDependencies: {
+            "@nuxtjs/tailwindcss": "^6.11.2",
+            "json-server": "^1.0.0-alpha.23",
+            nuxt: "^3.9.3",
+            tailwindcss: "^3.4.1",
+            vue: "^3.4.14",
+            "vue-router": "^4.2.5",
+          },
+        },
+      ],
     };
   },
   mounted() {
