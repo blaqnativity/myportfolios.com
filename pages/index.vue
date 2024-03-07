@@ -71,11 +71,6 @@ export default {
       email: "",
       message: "",
       erroMessage: "",
-      // computed: {
-      //   isEmpty() {
-      //     return this.inputValue.trim() === "";
-      //   },
-      // },
     };
   },
   methods: {

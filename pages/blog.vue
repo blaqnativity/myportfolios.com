@@ -53,36 +53,32 @@ export default {
     return {
       showContent: null,
       blogs: [
-        {
-          name: "nuxt-app",
-          private: true,
-          type: "module",
-          scripts: {
-            build: "nuxt build",
-            dev: "nuxt dev",
-            generate: "nuxt generate",
-            preview: "nuxt preview",
-            postinstall: "nuxt prepare",
-            "json-server": "json-server --watch db.json --port 3001",
-          },
-          devDependencies: {
-            "@nuxtjs/tailwindcss": "^6.11.2",
-            "json-server": "^1.0.0-alpha.23",
-            nuxt: "^3.9.3",
-            tailwindcss: "^3.4.1",
-            vue: "^3.4.14",
-            "vue-router": "^4.2.5",
-          },
-        },
+       "blogs": [
+    {
+      "title": "Programmatically displaying nav menu from an array and binding to its url property",
+      "text": "In a recent Vue.js/Nuxt.js project, the initial challenge I encountered was with the navigation menu links not functioning correctly despite being correctly bound. After thorough debugging and troubleshooting, I successfully resolved the issue with the following steps",
+      "url": "https://dev.to/theolukayodeasemudara/programmatically-displaying-nav-menu-from-an-array-and-binding-to-its-url-property-2nhl"
+    },
+    {
+      "title": "Slots VS Props in NUXT-3",
+      "text": "With Slots, you can easily display and maneuver the contents of a component, i.e; form, modal and many others...",
+      "url": "https://dev.to/theolukayodeasemudara/slots-vs-props-in-nuxt-3-34h8"
+    },
+    {
+      "title": "Your First Nuxt App",
+      "text": "Building apps with NUXT makes your work very easy and seamless especially cause of the fact that NUXT has done so many stuffs behind the scenes for you unlike Vuejs where you have to fix most yourself.",
+      "url": "https://dev.to/theolukayodeasemudara/your-first-nuxt-3-app-22c"
+    }
+  ]
       ],
     };
   },
-  mounted() {
-    fetch("http://localhost:3001/blogs")
-      .then((res) => res.json())
-      .then((data) => (this.blogs = data))
-      .catch((err) => console.log(err.message));
-  },
+  // mounted() {
+  //   fetch("http://localhost:3001/blogs")
+  //     .then((res) => res.json())
+  //     .then((data) => (this.blogs = data))
+  //     .catch((err) => console.log(err.message));
+  // },
   methods: {
     toggleAccordion(index) {
       this.showContent = this.showContent === index ? null : index;
